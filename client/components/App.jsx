@@ -1,19 +1,17 @@
 import React from 'react'
-import CorrectWithSound from './Correct'
-import colors from '.components/colors' //?
+import MainArea from './MainArea'
+
 
 
 const App = () => {
   return (
+    <>
+    <MainArea path='/' />
 
-    <div className="container">
+    </>
 
-    <input className="question"></input>
-    <input className="userAnswer"></input>
-    
-
-    
     </div>
+
   )
 }
   
