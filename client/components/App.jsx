@@ -1,16 +1,18 @@
 import React from 'react'
+import MainArea from './MainArea'
 
 const App = () => {
   return (
-
-    <div className="container">
+    <>
 
     <input className="question"></input>
     <input className="answer"></input>
     <button className="userAnswer"></button>
     
     <h1>React development has begun!</h1>
-    </div>
+    <MainArea path='/' />
+
+    </>
   )
 }
 
