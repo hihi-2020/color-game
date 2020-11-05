@@ -1,5 +1,5 @@
 import React from 'react'
-import GameFunctions from '../GameFunctions'
+// import GameFunctions from '../GameFunctions'
 
 
 class MainArea extends React.Component {
