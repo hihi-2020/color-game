@@ -1,10 +1,12 @@
 import React from 'react'
+import CorrectWithSound from './Correct'
+
 
 const App = () => {
   return (
 
     <div className="container">
-
+      <CorrectWithSound />
     <input className="question"></input>
     <input className="answer"></input>
     <button className="userAnswer"></button>
