@@ -1,17 +1,17 @@
 import React from 'react'
-import Sound from 'react-sound'
+import Sound from 'react-sound';
 
-class CorrectWithSound extends React.Component {
+class InCorrectWithSound extends React.Component {
   render() {
     return (
     <>
       <Sound
-        url="/correct.wav"
+        url="/incorrect.mp3"
         playStatus={Sound.status.PLAYING}
         autoLoad={true}
-      />
+      />;
       <div>
-        <h1>Correct!</h1>
+        <h1>WRONG</h1>
       </div>
     </>
     )
@@ -19,4 +19,4 @@ class CorrectWithSound extends React.Component {
 }
 
 
-export default CorrectWithSound
+export default InCorrectWithSound
