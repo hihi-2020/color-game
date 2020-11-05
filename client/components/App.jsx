@@ -1,4 +1,5 @@
 import React from 'react'
+import colors from '.components/colors' //?
 
 const App = () => {
   return (
@@ -6,55 +7,15 @@ const App = () => {
     <div className="container">
 
     <input className="question"></input>
-    <input className="answer"></input>
-    <button className="userAnswer"></button>
+    <input className="userAnswer"></input>
     
-    <h1>React development has begun!</h1>
+
+    
     </div>
   )
 }
-
-export default App
-
-
-function randomColor(){
-
-  Math.floor(Math.random() * colorArray.length)
-}
-
-function setColor(){
-
-}
-
-//define userAnswer
-var userAnswer = document.getElementsByClassName("userAnswer") //.value?
-
-// enter key listener
-userAnswer.addEventListener("keydown", function (e) {
-  if (e.keyCode === 13){
-    validate(e)
-  }
-})
-
-// validate if userAnswer is correct (?)
-function validate(e){
-  var text = e.target.value
-}
+  
+  export default App
+  
 
 
-//on page load or playAgain button (or after 2 seconds after answer or something)
- (evt) => {
-  this.setState({
-    style: {
-      ...this.state.style,
-      color: this.randomColor()
-    }
-  })
-
- }
-
- state = {
-   style: {
-     
-   }
- }
