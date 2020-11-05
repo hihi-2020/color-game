@@ -7,8 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
   ReactDOM.render(
     <Router>
       <App />
-    </Router>
-    ,
+    </Router>,
     document.getElementById('app')
   )
 })
