@@ -6,7 +6,9 @@ import MainArea from './MainArea'
 const App = () => {
   return (
     <>
-    <MainArea path='/' />
+
+    <Route path='/' component={MainArea} />
+
 
     </>
 
