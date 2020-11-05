@@ -1,5 +1,7 @@
 import React from 'react'
+import CorrectWithSound from './Correct'
 import colors from '.components/colors' //?
+
 
 const App = () => {
   return (
