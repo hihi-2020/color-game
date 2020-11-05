@@ -10,7 +10,7 @@ const App = () => {
     <button className="userAnswer"></button>
     
     <h1>React development has begun!</h1>
-    <MainArea path='/' />
+    <Route MainArea path='/' />
 
     </>
   )
