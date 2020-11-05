@@ -1,4 +1,4 @@
-const colorsObj = {
+const colors = {
   yellow: '#FFFF00',
   blue: '#0000FF',
   red: '#FF0000',
