@@ -13,8 +13,16 @@ class MainArea extends React.Component {
         }
     }
 
+    handleKeyPress = (event) => {
+        if(event.key === 'Enter'){
+          console.log('enter press here! ')
+           this.answerInput()
+        }
+      }
+
     componentDidMount() {
         this.generateColour()
+        
     }
 
     generateColour = () => {
@@ -39,16 +47,16 @@ class MainArea extends React.Component {
     // }
 
 // // when called determines if answerInput is correct or not and then does CORRECT or FAILURE
-//     answerInput = () => {
-//         answerInput = document.getElementsByClassName("answerInput").value
-//         console.log(answerInput)
-//         const answer = getAnswer()
-//         if (answerInput == answer) {
-//             console.log("Success")
-//         } else {
-//             console.log("Failure")
-//         }
-//     }
+    answerInput = () => {
+        const results = document.getElementsByClassName("answerInput")[0].value
+        console.log(results)
+        const answer = getAnswer()
+        if (results == answer) {
+            console.log("Success")
+        } else {
+            console.log("Failure")
+        }
+    }
 
     // let answerInput = document.getElementsByClassName("answerInput")
     // answerInput.addEventListener("keydown", function (e) {
@@ -61,7 +69,7 @@ class MainArea extends React.Component {
     return (
       <div>
         <p type="text" className="wordInput" style={this.state.style}>{this.state.word}</p>
-        <input type="text" className="answerInput"></input>
+        <input type="text" className="answerInput" onKeyPress={this.handleKeyPress}></input>
         <br></br>
         <br></br>
         <button onClick={this.generateColour}>Go Again?</button>
