@@ -1,0 +1,25 @@
+p {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 15vw;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border: 0px;
+    border-bottom: 2px solid black;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 8vw;
+    width: 50%;
+}
+
+input[type='text'] {
+    outline: 0;
+    border: 0;
+    background: transparent;
+    border-bottom: 2px solid black;
+    width: 50%;
+}
+
+body{
+    text-align: center;
+}
