@@ -55,26 +55,26 @@ class MainArea extends React.Component {
         const answer = getAnswer()
         if (results == answer) {
            this.setState({
-                isCorrect: true
-
+                isCorrect: true,
            })
            
             console.log("Success")
+
+            
         } else {
             this.setState({
                 isIncorrect: true
             })
             console.log("Failure")
         }
+        setTimeout(()=>{
+            window.location.reload()
+        } ,1000)
         // this.generateColour()
     }
 
-    // let answerInput = document.getElementsByClassName("answerInput")
-    // answerInput.addEventListener("keydown", function (e) {
-    //     if (e.keyCode === 13) {  //checks whether the pressed key is "Enter"
-    //         validate(e);
-    //     }
-    // });
+
+
   
   render() {
     return (
@@ -89,6 +89,8 @@ class MainArea extends React.Component {
         </div> <div>
             {this.state.isIncorrect && <Incorrect />}
         </div>
+
+    
 
         {/* <input type="text" className="answerInput"></input> */}
       </div>
