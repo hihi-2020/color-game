@@ -9,7 +9,7 @@ class InCorrectWithSound extends React.Component {
         url="/incorrect.mp3"
         playStatus={Sound.status.PLAYING}
         autoLoad={true}
-      />;
+      />
       <div>
         <h1>WRONG</h1>
       </div>
