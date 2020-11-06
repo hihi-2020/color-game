@@ -37,27 +37,13 @@ export function getWord(){
     return word
 }
 
-  // function evaluateResult(){
-  //   if (document.getElementsByClassName(answerInput).value == answer {
-      
-  //   } 
-  // }
+// // evaluates if answerInput = answer 
+//   export function evaluateResult(){
+//     if (document.getElementsByClassName(answerInput).value == answer {
+//       console.log("Correct!")
+//     } else {
+//       console.log("Incorrect")
+//     }
+//   }
 
 
-
-
-
-
-// getPair()
-// getAnswer()
-// getStyle()
-// getWord()
-
-  // module.exports = {
-  //   getPair,
-  //   getAnswer,
-  //   getStyle,
-  //   getWord,
-  //   }
-
-  // export default GameFunctions
