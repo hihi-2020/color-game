@@ -79,16 +79,16 @@ class MainArea extends React.Component {
   render() {
     return (
       <div>
-        <p type="text" className="wordInput" style={this.state.style}>{this.state.word}</p>
-        <input type="text" className="answerInput" onKeyPress={this.handleKeyPress}></input>
-        <br></br>
-        <br></br>
-        <button onClick={this.generateColour}>Go Again?</button>
         <div>
             {this.state.isCorrect && <Correct />}
         </div> <div>
             {this.state.isIncorrect && <Incorrect />}
         </div>
+        <p type="text" className="wordInput" style={this.state.style}>{this.state.word}</p>
+        <input autoFocus={true} type="text" className="answerInput" onKeyPress={this.handleKeyPress}></input>
+        <br></br>
+        <br></br>
+        <button onClick={this.generateColour}>Go Again?</button>
 
     
 
