@@ -88,8 +88,7 @@ class MainArea extends React.Component {
         <input autoFocus={true} type="text" className="answerInput" onKeyPress={this.handleKeyPress}></input>
         <br></br>
         <br></br>
-        <button onClick={this.generateColour}>Go Again?</button>
-
+       
     
 
         {/* <input type="text" className="answerInput"></input> */}

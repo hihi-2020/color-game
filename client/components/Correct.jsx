@@ -11,7 +11,7 @@ class CorrectWithSound extends React.Component {
         autoLoad={true}
       />
       <div>
-        <h1>Correct!</h1>
+        <h1>CORRECT!</h1>
       </div>
     </>
     )
