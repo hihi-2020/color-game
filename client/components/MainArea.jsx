@@ -15,12 +15,11 @@ class MainArea extends React.Component {
 
     componentDidMount() {
         this.generateColour()
-        // this.getStyle()
     }
 
     generateColour = () => {
-        // const pair = getPair()
-        // const answer = getAnswer()
+        const pair = getPair()
+        const answer = getAnswer()
         const word = getWord()
         const style = getStyle()
         this.setState({
@@ -33,30 +32,30 @@ class MainArea extends React.Component {
     }
 
 // when enter pressed calls answer input
-    window.addEventListener('keypress', function (e) {
-        if (e.keyCode == 13) {
-            answerInput()
-        }
-    }
+    // window.addEventListener('keypress', function (e) {
+    //     if (e.keyCode == 13) {
+    //         answerInput()
+    //     }
+    // }
 
-// when called determines if answerInput is correct or not and then does CORRECT or FAILURE
-    answerInput = () => {
-        answerInput = document.getElementsByClassName("answerInput").value
-        console.log(answerInput)
-        const answer = getAnswer()
-        if (answerInput == answer) {
-            console.log("Success")
-        } else {
-            console.log("Failure")
-        }
-    }
+// // when called determines if answerInput is correct or not and then does CORRECT or FAILURE
+//     answerInput = () => {
+//         answerInput = document.getElementsByClassName("answerInput").value
+//         console.log(answerInput)
+//         const answer = getAnswer()
+//         if (answerInput == answer) {
+//             console.log("Success")
+//         } else {
+//             console.log("Failure")
+//         }
+//     }
 
-    let answerInput = document.getElementsByClassName("answerInput")
-    answerInput.addEventListener("keydown", function (e) {
-        if (e.keyCode === 13) {  //checks whether the pressed key is "Enter"
-            validate(e);
-        }
-    });
+    // let answerInput = document.getElementsByClassName("answerInput")
+    // answerInput.addEventListener("keydown", function (e) {
+    //     if (e.keyCode === 13) {  //checks whether the pressed key is "Enter"
+    //         validate(e);
+    //     }
+    // });
   
   render() {
     return (
@@ -69,7 +68,7 @@ class MainArea extends React.Component {
 
         {/* <input type="text" className="answerInput"></input> */}
       </div>
-    );
+    )
   }
 }
 

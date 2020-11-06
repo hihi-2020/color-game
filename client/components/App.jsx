@@ -16,14 +16,9 @@ class App extends React.Component {
 
     <>
 
-      <MainArea path='/' />
-      {/* {this.state.correct == true && <InCorrectWithSound />}
-      <button onClick= {() => {this.setState ({correct:true})}}>Click</button> */}
-    </>
-
 
     <Route path='/' component={MainArea} />
-
+      </>
   )
   }
 }
