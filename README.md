@@ -1,5 +1,8 @@
 # A starter webpack project for React
 
+A small mind-game as an introduction to working with React
+
+
 This is a starter project that uses webpack to transpile and bundle ES6 React code. To use, consider these steps:
 
 * Fork this repo
